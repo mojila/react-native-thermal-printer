@@ -16,13 +16,13 @@ https://github.com/DantSu/ESCPOS-ThermalPrinter-Android/tree/3.0.1
 ## Installation
 
 ```sh
-npm install react-native-thermal-printer
+npm install git+https://github.com/mojila/react-native-thermal-printer.git
 ```
 
 or
 
 ```sh
-yarn add react-native-thermal-printer
+yarn add https://github.com/mojila/react-native-thermal-printer.git
 ```
 
 ### Android Manifest
