@@ -34,6 +34,8 @@ describe('React Native Thermal Printer Module', () => {
       printerWidthMM: 55,
       printerNbrCharactersPerLine: 66,
       timeout: 30000,
+      encoding: 'UTF-8',
+      charsetId: 0,
     };
 
     Object.keys(ReactNativeThermalPrinter.defaultConfig).forEach(
@@ -76,7 +78,9 @@ describe('React Native Thermal Printer Module', () => {
         defaultConfig.printerDpi,
         defaultConfig.printerWidthMM,
         defaultConfig.printerNbrCharactersPerLine,
-        defaultConfig.timeout
+        defaultConfig.timeout,
+        defaultConfig.encoding,
+        defaultConfig.charsetId
       );
     });
 
@@ -115,7 +119,9 @@ describe('React Native Thermal Printer Module', () => {
         printerDpi,
         printerWidthMM,
         printerNbrCharactersPerLine,
-        timeout
+        timeout,
+        'UTF-8',
+        0
       );
     });
   });
@@ -144,7 +150,9 @@ describe('React Native Thermal Printer Module', () => {
         defaultConfig.mmFeedPaper,
         defaultConfig.printerDpi,
         defaultConfig.printerWidthMM,
-        defaultConfig.printerNbrCharactersPerLine
+        defaultConfig.printerNbrCharactersPerLine,
+        defaultConfig.encoding,
+        defaultConfig.charsetId
       );
     });
     it('should pass args to the native module', async () => {
@@ -176,7 +184,9 @@ describe('React Native Thermal Printer Module', () => {
         mmFeedPaper,
         printerDpi,
         printerWidthMM,
-        printerNbrCharactersPerLine
+        printerNbrCharactersPerLine,
+        'UTF-8',
+        0
       );
     });
   });
